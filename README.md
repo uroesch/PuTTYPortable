@@ -1,24 +1,27 @@
-[![Build]({{ AppProjectUrl }}/workflows/build-linux/badge.svg)]({{ AppProjectUrl }}/actions?query=workflow%3Abuild-linux)
-[![Build]({{ AppProjectUrl }}/workflows/build-windows/badge.svg)]({{ AppProjectUrl }}/actions?query=workflow%3Abuild-windows)
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/uroesch/{{ AppName }}?include_prereleases)]({{ AppProjectUrl }}/releases)
+﻿[![Build](https://github.com/uroesch/PuTTYPortable/workflows/build-linux/badge.svg)](https://github.com/uroesch/PuTTYPortable/actions?query=workflow%3Abuild-linux)
+[![Build](https://github.com/uroesch/PuTTYPortable/workflows/build-windows/badge.svg)](https://github.com/uroesch/PuTTYPortable/actions?query=workflow%3Abuild-windows)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/uroesch/PuTTYPortable?include_prereleases)](https://github.com/uroesch/PuTTYPortable/releases)
 [![Runs on](https://img.shields.io/badge/runs%20on-Win64%20%26%20Win32-blue)](#runtime-dependencies)
-![GitHub All Releases](https://img.shields.io/github/downloads/{{ GitHubUser }}/{{ AppName }}/total)
+![GitHub All Releases](https://img.shields.io/github/downloads/uroesch/PuTTYPortable/total)
 
-# {{ AppNameSpaced }} for PortableApps.com
+# PuTTY Portable for PortableApps.com
 
 <img src="App/AppInfo/appicon_128.png" align=left>
 
-[{{ UpstreamName }}]({{ UpstreamUrl }}) Lorem ipsum dolor sit amet, consetetur
-sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-dolores et ea rebum.
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+is a free and open-source terminal emulator, serial console and network file 
+transfer application. It supports several network protocols, including SCP, 
+SSH, Telnet, rlogin, and raw socket connection. It can also connect to a 
+serial port. The name "PuTTY" has no official meaning.
 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+PuTTY was originally written for Microsoft Windows, but it has been ported 
+to various other operating systems. Official ports are available for some 
+Unix-like platforms, with work-in-progress ports to Classic Mac OS and 
+macOS, and unofficial ports have been contributed to platforms such as 
+Symbian Windows Mobile and Windows Phone.
 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+PuTTY was written and is maintained primarily by Simon Tatham, a British
+programmer. 
 
 ## Runtime dependencies
 * 32-bit or 64-bit version of Windows Vista or greater.
@@ -27,22 +30,19 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 
 | OS              | 32-bit             | 64-bit              |
 |-----------------|:------------------:|:-------------------:|
-| ReactOS 0.4.14  | ![nd][nd]          | ![nd][nd]           |
-| ReactOS 0.4.15  | ![nd][nd]          | ![nd][nd]           |
-| Windows XP      | ![nd][nd]          | ![nd][nd]           |
-| Windows Vista   | ![nd][nd]          | ![nd][nd]           |
-| Windows 7       | ![nd][nd]          | ![nd][nd]           |
-| Windows 8       | ![nd][nd]          | ![nd][nd]           |
-| Windows 10      | ![nd][nd]          | ![nd][nd]           |
-| Windows 11      | ![na][na]          | ![nd][nd]           |
+| ReactOS 0.4.14  | ![ps][ps]          | ![na][na]           |
+| ReactOS 0.4.15  | ![ps][ps]          | ![ps][ps]           |
+| Windows XP      | ![fs][fs]          | ![fs][fs]           |
+| Windows Vista   | ![fs][fs]          | ![fs][fs]           |
+| Windows 7       | ![fs][fs]          | ![fs][fs]           |
+| Windows 8       | ![fs][fs]          | ![fs][fs]           |
+| Windows 10      | ![fs][fs]          | ![fs][fs]           |
+| Windows 11      | ![na][na]          | ![fs][fs]           |
 
 Legend: ![ns][ns] not supported; ![na][na] not applicable; ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
 
 ## Status
-This PortableApps project is in beta stage.
-
-## Todo
-- [ ] Documentation
+This PortableApps project is in alpha stage.
 
 <!-- Start include INSTALL.md -->
 ## Installation
@@ -50,7 +50,7 @@ This PortableApps project is in beta stage.
 ### Download
 
 Since this is not an official PortableApp the PortableApps installer must
-be download first. Navigate to https://github.com/uroesch/{{ AppName }}/releases
+be download first. Navigate to https://github.com/uroesch/PuTTYPortable/releases
 for a selection of releases.
 
 ### Install via the PortableApps.com Platform
@@ -103,13 +103,13 @@ have not been tested.
 ```
 git clone https://github.com/uroesch/PortableApps.comInstaller.git
 git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{{ AppName }}.git
+git clone https://github.com/uroesch/PuTTYPortable.git
 ```
 
 ###### Build installer
 
 ```
-cd {{ AppName }}
+cd PuTTYPortable
 powershell -ExecutionPolicy ByPass -File Other/Update/Update.ps1
 ```
 
@@ -124,13 +124,13 @@ For a Docker build run the following command.
 ###### Clone repo
 
 ```
-git clone https://github.com/uroesch/{{ AppName }}.git
+git clone https://github.com/uroesch/PuTTYPortable.git
 ```
 
 ###### Build installer
 
 ```
-cd {{ AppName }}
+cd PuTTYPortable
 curl -sJL https://raw.githubusercontent.com/uroesch/PortableApps/master/scripts/docker-build.sh | bash
 ```
 
@@ -160,13 +160,13 @@ Xvfb ${DISPLAY} -ac &
 ```
 git clone https://github.com/uroesch/PortableApps.comInstaller.git
 git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{{ AppName }}.git
+git clone https://github.com/uroesch/PuTTYPortable.git
 ```
 
 ###### Build installer
 
 ```
-cd {{ AppName }}
+cd PuTTYPortable
 pwsh Other/Update/Update.ps1
 ```
 
@@ -197,13 +197,13 @@ Xvfb ${DISPLAY} -ac &
 ```
 git clone https://github.com/uroesch/PortableApps.comInstaller.git
 git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{{ AppName }}.git
+git clone https://github.com/uroesch/PuTTYPortable.git
 ```
 
 ###### Build installer
 
 ```
-cd {{ AppName }}
+cd PuTTYPortable
 pwsh Other/Update/Update.ps1
 ```
 <!-- End include BUILD.md -->
@@ -215,3 +215,4 @@ pwsh Other/Update/Update.ps1
 [fs]: Other/Icons/full_support.svg
 [defender_warning]: Other/Images/info_defender-protected.png
 [howto_unlock]: Other/Images/info_defender-protected.png
+
