@@ -39,8 +39,8 @@ GUI application to the PortableApps application menu.
 
 | OS              | 32-bit             | 64-bit              |
 |-----------------|:------------------:|:-------------------:|
-| ReactOS 0.4.14  | ![ps][ps]          | ![na][na]           |
-| ReactOS 0.4.15  | ![ps][ps]          | ![ps][ps]           |
+| ReactOS 0.4.14  | ![fs][fs]          | ![na][na]           |
+| ReactOS 0.4.15  | ![fs][fs]          | ![ps][ps]           |
 | Windows XP      | ![fs][fs]          | ![fs][fs]           |
 | Windows Vista   | ![fs][fs]          | ![fs][fs]           |
 | Windows 7       | ![fs][fs]          | ![fs][fs]           |
