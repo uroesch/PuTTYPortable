@@ -21,10 +21,19 @@ macOS, and unofficial ports have been contributed to platforms such as
 Symbian Windows Mobile and Windows Phone.
 
 PuTTY was written and is maintained primarily by Simon Tatham, a British
-programmer. 
+programmer.
+
+## Differences to the official PuTTYPortable
+
+There is an official release on PortableApps.com for the 
+[PuTTY suite](https://portableapps.com/apps/internet/putty_portable)
+of tools. Said implementation only has a menu entry for the PuTTY Terminal,
+but not for other useful GUI applications such as PuTTYgen or Pageant.
+This implementation's only difference is the addition of the 2 addtional
+GUI application to the PortableApps application menu.
 
 ## Runtime dependencies
-* 32-bit or 64-bit version of Windows Vista or greater.
+* 32-bit or 64-bit version of (pretty much any) Windows.
 
 ## Support matrix
 
