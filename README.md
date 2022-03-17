@@ -8,16 +8,16 @@
 
 <img src="App/AppInfo/appicon_128.png" align=left>
 
-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
-is a free and open-source terminal emulator, serial console and network file 
-transfer application. It supports several network protocols, including SCP, 
-SSH, Telnet, rlogin, and raw socket connection. It can also connect to a 
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+is a free and open-source terminal emulator, serial console and network file
+transfer application. It supports several network protocols, including SCP,
+SSH, Telnet, rlogin, and raw socket connection. It can also connect to a
 serial port. The name "PuTTY" has no official meaning.
 
-PuTTY was originally written for Microsoft Windows, but it has been ported 
-to various other operating systems. Official ports are available for some 
-Unix-like platforms, with work-in-progress ports to Classic Mac OS and 
-macOS, and unofficial ports have been contributed to platforms such as 
+PuTTY was originally written for Microsoft Windows, but it has been ported
+to various other operating systems. Official ports are available for some
+Unix-like platforms, with work-in-progress ports to Classic Mac OS and
+macOS, and unofficial ports have been contributed to platforms such as
 Symbian Windows Mobile and Windows Phone.
 
 PuTTY was written and is maintained primarily by Simon Tatham, a British
@@ -25,7 +25,7 @@ programmer.
 
 ## Differences to the official PuTTYPortable
 
-There is an official release on PortableApps.com for the 
+There is an official release on PortableApps.com for the
 [PuTTY suite](https://portableapps.com/apps/internet/putty_portable)
 of tools. Said implementation only has a menu entry for the PuTTY Terminal,
 but not for other useful GUI applications such as PuTTYgen or Pageant.
@@ -224,4 +224,3 @@ pwsh Other/Update/Update.ps1
 [fs]: Other/Icons/full_support.svg
 [defender_warning]: Other/Images/info_defender-protected.png
 [howto_unlock]: Other/Images/info_defender-protected.png
-
