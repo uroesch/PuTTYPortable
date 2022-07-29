@@ -215,7 +215,7 @@ Function Update-Application() {
 
 # -----------------------------------------------------------------------------
 Function Source-InstallScript() {
-  Param( 
+  Param(
     [String] $Mode
   )
   $Script = "$PSScriptRoot\$Mode.ps1"
