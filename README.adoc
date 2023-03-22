@@ -1,7 +1,7 @@
 = {app-name-spaced} for PortableApps.com
 :author: Urs Roesch
 :app-name-spaced: PuTTY
-:app-name: PuttyPortable
+:app-name: PuTTYPortable
 :git-user: uroesch
 :app-project-url: https://github.com/{git-user}/{app-name}
 :upstream-name: {app-name-spaced}
